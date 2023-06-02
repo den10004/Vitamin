@@ -5,6 +5,19 @@
   background-position: 100% -70px;
   height: 936px;
   overflow: hidden;
+  position: relative;
+}
+
+@media screen and (max-width: 1700px) {
+  .main {
+    height: 1300px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    height: 1050px;
+  }
 }
 
 .main__images {
@@ -177,4 +190,209 @@
   line-height: 1.786;
   color: rgb(51, 51, 51);
   margin-left: 40px;
+}
+
+.main__right {
+  position: absolute;
+  width: 570px;
+  top: 0;
+  right: 100px;
+}
+
+.main__right > img {
+  position: absolute;
+  z-index: 2;
+}
+
+@media screen and (max-width: 767px) {
+  .main__right > img {
+    width: 70%;
+  }
+}
+
+.bottle {
+  top: 170px;
+  left: -240px;
+}
+
+.bottle1 {
+  top: 220px;
+  right: -20px;
+}
+
+@media screen and (max-width: 1900px) {
+  .main__right {
+    right: 0px;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .main__right {
+    top: 550px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main__right {
+    width: 280px;
+  }
+
+  .bottle {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+
+  .bottle1 {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+}
+
+.ring {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgb(205, 1, 4);
+  width: 222px;
+  height: 222px;
+  right: 300px;
+  top: 510px;
+  z-index: 3;
+}
+
+@media screen and (max-width: 767px) {
+  .ring {
+    width: 150px;
+    height: 150px;
+    right: 10px;
+    top: 300px;
+  }
+}
+
+.ring > h4 {
+  font-size: 18px;
+  font-family: "Commissioner";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.556;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 767px) {
+  .ring > h4 {
+    margin-top: 15px;
+  }
+}
+
+.ring > h4 > span {
+  font-weight: 900;
+}
+
+.ring > h4 > b {
+  position: relative;
+}
+
+.ring > h4 > b:before {
+  content: "";
+  width: 70px;
+  height: 2px;
+  background: white;
+  position: absolute;
+  top: 55%;
+  left: 0;
+}
+
+.figure {
+  width: 100px;
+  height: 188px;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 20px;
+  transform: rotate(-90deg);
+}
+
+.figure-color1 {
+  background: rgb(239, 240, 145);
+}
+
+.figure-color1:before {
+  border-right: 26px solid rgb(239, 240, 145);
+}
+.figure-color2 {
+  background: rgb(254, 186, 162);
+}
+
+.figure-color2:before {
+  border-right: 26px solid rgb(254, 186, 162);
+}
+
+.figure:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 26px;
+  width: 0;
+  height: 0;
+  border-top: 35px solid transparent;
+  border-bottom: 35px solid transparent;
+  margin-top: 35px;
+}
+
+.figure-text {
+  transform: rotate(90deg);
+  width: 115px;
+  font-size: 16px;
+  font-family: "Commissioner";
+  color: rgb(51, 51, 51);
+  line-height: 1.313;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.figure-text > strong {
+  margin-top: 10px;
+}
+
+.figure-position1 {
+  position: absolute;
+  top: 20px;
+  left: -30px;
+}
+
+.figure-position2 {
+  position: absolute;
+  top: 60px;
+  right: 170px;
+}
+
+@media screen and (max-width: 767px) {
+  .figure {
+    width: 90px;
+    height: 140px;
+  }
+
+  .figure:before {
+    margin-top: 15px;
+  }
+  .figure-text {
+    margin-top: 35px;
+  }
+
+  .figure-position1 {
+    position: absolute;
+    top: 40px;
+    left: 120px;
+  }
+
+  .figure-position2 {
+    position: absolute;
+    top: 90px;
+    right: 180px;
+  }
 }
