@@ -1,0 +1,180 @@
+.main {
+  max-width: 1920px;
+  background-image: url(../images/back.png);
+  background-repeat: no-repeat;
+  background-position: 100% -70px;
+  height: 936px;
+  overflow: hidden;
+}
+
+.main__images {
+  max-width: 1096px;
+  background-image: url(../images/Shape.png);
+  background-repeat: no-repeat;
+  background-position: 0% -70px;
+  height: 835px;
+  position: relative;
+}
+
+.main__leaf {
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
+
+.main__leaf2 {
+  position: absolute;
+  top: 50px;
+  right: -20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .main__leaf {
+    display: none;
+  }
+
+  .main__leaf2 {
+    display: none;
+  }
+}
+
+.main__leaf5 {
+  position: absolute;
+  bottom: 190px;
+  right: -20px;
+}
+
+.main__headline {
+  width: 535px;
+  padding-top: 90px;
+  margin-left: 210px;
+}
+
+@media screen and (max-width: 1024px) {
+  .main__headline {
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main__headline {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main__headline {
+    width: 95%;
+  }
+}
+
+.main__headline > h1 {
+  font-size: 56px;
+  font-family: "Museo Sans Cyrl", sans-serif;
+  color: rgb(56, 77, 30);
+  line-height: 1.071;
+}
+
+.main__headline > h3 {
+  margin-top: 47px;
+  font-size: 32px;
+  line-height: 1.281;
+}
+
+@media screen and (max-width: 600px) {
+  .main__headline > h1 {
+    font-size: 30px;
+  }
+
+  .main__headline > h3 {
+    font-size: 26px;
+  }
+}
+
+.main__block {
+  position: relative;
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 1024px) {
+  .main__block {
+    margin-top: 30px;
+  }
+}
+
+.main__block > img {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: -25px;
+}
+
+@media screen and (max-width: 1024px) {
+  .main__block > img {
+    bottom: -90px;
+  }
+}
+
+.main__order {
+  background-color: rgb(184, 212, 39);
+  width: 75px;
+  height: 71px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-family: "Commissioner";
+  line-height: 1.2;
+  padding-left: 25px;
+  position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  .main__order {
+    margin: 0 auto;
+    padding-left: 0px;
+  }
+}
+
+.order__block {
+  position: absolute;
+  width: 525px;
+  top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .order__block {
+    flex-direction: column;
+    width: 200px;
+    left: -60px;
+  }
+}
+
+.order__block::before {
+  content: "";
+  background-image: url(../images/arrow_btn.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.order__block > a {
+  font-family: "Commissioner";
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  line-height: 1.786;
+  text-decoration: none;
+}
+
+.order__block > span {
+  font-family: "Commissioner";
+  font-size: 14px;
+  line-height: 1.786;
+  color: rgb(51, 51, 51);
+  margin-left: 40px;
+}
