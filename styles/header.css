@@ -1,0 +1,127 @@
+.header {
+  max-width: 1500px;
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 10px 15px 10px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    flex-direction: column;
+  }
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header__logo > a > img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.header__logo > h4 {
+  font-size: 16px;
+  font-family: "Myriad Pro", sans-serif;
+  color: rgb(44, 57, 29);
+  line-height: 1.438;
+}
+
+.header__contacts {
+  display: flex;
+}
+
+@media screen and (max-width: 900px) {
+  .header__contacts {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header__contacts {
+    flex-direction: column;
+  }
+}
+
+.contacts__icons {
+  display: flex;
+  margin-right: 80px;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .contacts__icons {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contacts__icons {
+    margin: 0 auto;
+  }
+}
+
+.contacts__icons > img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.contacts__icons > img:not(:last-child) {
+  margin-right: 20px;
+}
+
+.contacts__tel {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .contacts__tel {
+    margin: 10px auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contacts__tel {
+    flex-direction: column;
+  }
+
+  .contacts__tel > p:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.contacts__tel > p {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 425px) {
+  .contacts__tel > p {
+    margin-right: 0px;
+  }
+}
+
+.contacts__tel > img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.contacts__tel > p:first-child {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+.contacts__tel > p:last-child {
+  font-size: 16px;
+  line-height: 1.563;
+}
