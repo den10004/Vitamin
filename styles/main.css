@@ -3,9 +3,10 @@
   background-image: url(../images/back.png);
   background-repeat: no-repeat;
   background-position: 100% -70px;
-  height: 936px;
+  height: 840px;
   overflow: hidden;
   position: relative;
+  background-color: #fafdeb;
 }
 
 @media screen and (max-width: 1700px) {
