@@ -1,0 +1,146 @@
+.ingredients {
+  max-width: 1920px;
+  background-image: url(../images/background2.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 1015px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 150px;
+}
+
+.ingredients__block {
+  width: 1246px;
+  margin-left: auto;
+  margin: 125px 200px 0 auto;
+}
+
+@media screen and (max-width: 1500px) {
+  .ingredients__block {
+    width: 95%;
+    margin: 125px auto 0 auto;
+  }
+}
+
+.block__description {
+  width: 640px;
+  margin-left: 505px;
+}
+
+@media screen and (max-width: 1250px) {
+  .block__description {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .block__description {
+    width: 95%;
+  }
+}
+
+.block__description > h3 {
+  font-size: 39px;
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-weight: 700;
+  color: rgb(56, 78, 31);
+  line-height: 1.2;
+}
+
+.block__description > h4 {
+  font-size: 25px;
+  font-family: "Commissioner";
+  font-weight: 500;
+  color: rgb(51, 51, 51);
+  line-height: 1.24;
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 900px) {
+  .block__description > h3 {
+    font-size: 29px;
+    line-height: 1;
+  }
+  .block__description > h4 {
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
+.block__cards {
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1250px) {
+  .block__cards {
+    width: 860px;
+    margin: 20px auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .block__cards {
+    width: 600px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .block__cards {
+    width: 300px;
+  }
+}
+
+.block__card {
+  border-width: 1px;
+  border-color: rgb(255, 228, 49);
+  border-style: solid;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  width: 382px;
+  height: 374px;
+  padding: 20px 30px 0px 35px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 1250px) {
+  .block__card {
+    width: 280px;
+    height: 320px;
+    padding: 10px;
+  }
+}
+
+.block__card > img {
+  height: 147px;
+}
+
+.block__card > h3 {
+  font-size: 20px;
+  font-family: "Commissioner";
+  color: rgb(51, 51, 51);
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.block__card > h4 {
+  font-size: 18px;
+  font-family: "Commissioner";
+  color: rgb(51, 51, 51);
+  font-weight: 400;
+  line-height: 1.4;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 1250px) {
+  .block__card > h3 {
+    font-size: 18px;
+    line-height: 1;
+  }
+  .block__card > h4 {
+    font-size: 14px;
+  }
+}
