@@ -1,5 +1,6 @@
 .video {
   background-color: #fafdeb;
+  height: 1000px;
 }
 
 .video > h2 {
@@ -20,6 +21,7 @@
 .videowrap {
   max-width: 1170px;
   margin: 0 auto;
+  position: relative;
 }
 @media screen and (max-width: 1200px) {
   .videowrap {
@@ -46,4 +48,131 @@ embed {
 
 iframe {
   border-radius: 10px !important;
+}
+
+.video__background {
+  position: relative;
+}
+
+.video__background > img {
+  position: absolute;
+}
+
+.background__wave {
+  top: 320px;
+  right: 0;
+}
+
+.background__waveGreen {
+  top: 430px;
+  right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .background__wave {
+    top: 220px;
+  }
+  .background__waveGreen {
+    top: 280px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .background__wave {
+    top: 180px;
+  }
+  .background__waveGreen {
+    top: 230px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .background__wave {
+    top: 160px;
+  }
+  .background__waveGreen {
+    top: 130px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .background__wave {
+    top: 120px;
+  }
+  .background__waveGreen {
+    top: 160px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .background__wave {
+    top: 100px;
+  }
+}
+
+.background__leaf {
+  top: 70px;
+  left: 120px;
+}
+
+.background__tomato {
+  top: 440px;
+  left: 0px;
+}
+
+.background__leaf2 {
+  top: 750px;
+  left: 40px;
+}
+
+.background__leaf3 {
+  top: 740px;
+  right: 120px;
+}
+.background__leaf4 {
+  position: absolute;
+  top: -50px;
+  right: -200px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1650px) {
+  .background__leaf4 {
+    width: 200px;
+    right: -50px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .background__leaf4 {
+    width: 100px;
+    top: -20px;
+    right: 0px;
+  }
+}
+
+.background__bump {
+  top: 300px;
+  right: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .background__leaf2 {
+    display: none;
+  }
+
+  .background__leaf3 {
+    display: none;
+  }
+  .background__tomato {
+    top: 200px;
+  }
+  .background__bump {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .background__tomato {
+    display: none;
+  }
 }
