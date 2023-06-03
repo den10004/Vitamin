@@ -10,7 +10,7 @@
 
 @media screen and (max-width: 1700px) {
   .main {
-    height: 1300px;
+    height: 1400px;
   }
 }
 
@@ -305,6 +305,20 @@
   position: absolute;
   top: 55%;
   left: 0;
+}
+
+.main__leaf3 {
+  position: absolute;
+  top: 200px;
+  right: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .main__leaf3 {
+    width: 50%;
+    top: 120px;
+    right: 30px;
+  }
 }
 
 .figure {
