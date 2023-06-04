@@ -54,6 +54,12 @@
   }
 }
 
+@media screen and (max-width: 425px) {
+  .ingredients__block {
+    margin: 60px auto 50px auto;
+  }
+}
+
 .block__description {
   width: 640px;
   margin-left: 505px;
@@ -99,6 +105,12 @@
   }
 }
 
+@media screen and (max-width: 375px) {
+  .block__description > h3 {
+    font-size: 25px;
+  }
+}
+
 .block__cards {
   margin-top: 40px;
   display: flex;
@@ -132,9 +144,9 @@
   border-style: solid;
   border-radius: 15px;
   background-color: rgb(255, 255, 255);
-  width: 382px;
-  height: 374px;
-  padding: 20px 30px 0px 35px;
+  width: 380px;
+  height: 376px;
+  padding: 20px 25px 0px 35px;
   margin: 10px;
 }
 
@@ -181,7 +193,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  margin-top: 50px;
+  margin-top: 45px;
   max-width: 640px;
 }
 
@@ -214,15 +226,15 @@
 }
 
 .consultation__telegram {
-  width: 62px;
-  height: 62px;
+  width: 64px;
+  height: 64px;
   cursor: pointer;
 }
 
 .consultation__arrow {
   position: absolute;
   left: 180px;
-  bottom: -35px;
+  bottom: -40px;
   transform: rotate(9deg);
 }
 
@@ -268,26 +280,14 @@
 
 @media screen and (max-width: 900px) {
   .ingredients__leaf2 {
-    top: 950px;
+    top: 750px;
     width: 100px;
   }
 }
 
 @media screen and (max-width: 640px) {
   .ingredients__leaf2 {
-    top: 1200px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .ingredients__leaf2 {
-    top: 1300px;
-  }
-}
-
-@media screen and (max-width: 340px) {
-  .ingredients__leaf2 {
-    top: 1350px;
+    top: 1000px;
   }
 }
 

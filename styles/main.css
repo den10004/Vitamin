@@ -60,7 +60,7 @@
 
 .main__headline {
   width: 535px;
-  padding-top: 90px;
+  padding-top: 95px;
   margin-left: 210px;
 }
 
@@ -134,7 +134,7 @@
 
 .main__order {
   background-color: rgb(184, 212, 39);
-  width: 75px;
+  width: 95px;
   height: 71px;
   border-radius: 40px;
   font-size: 18px;
@@ -361,7 +361,7 @@
 
 .figure-text {
   transform: rotate(90deg);
-  width: 115px;
+  width: 110px;
   font-size: 16px;
   font-family: "Commissioner";
   color: rgb(51, 51, 51);
@@ -382,7 +382,7 @@
 
 .figure-position2 {
   position: absolute;
-  top: 60px;
+  top: 65px;
   right: 170px;
 }
 

@@ -4,10 +4,10 @@ header {
 }
 
 .header {
-  max-width: 1500px;
+  max-width: 1520px;
   display: flex;
   justify-content: space-between;
-  padding: 13px 10px 15px 10px;
+  padding: 10px 10px 15px 10px;
   margin: 0 auto;
   background-color: white;
 }
@@ -105,16 +105,6 @@ header {
   }
 }
 
-.contacts__tel > p {
-  margin-right: 20px;
-}
-
-@media screen and (max-width: 425px) {
-  .contacts__tel > p {
-    margin-right: 0px;
-  }
-}
-
 .contacts__tel > img {
   width: 35px;
   height: 35px;
@@ -122,12 +112,20 @@ header {
 }
 
 .contacts__tel > p:first-child {
-  font-size: 20px;
+  font-size: 21px;
   font-weight: bold;
   line-height: 1.25;
+  margin-right: 22px;
 }
 
-.contacts__tel > p:last-child {
+.write-tel {
   font-size: 16px;
   line-height: 1.563;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 425px) {
+  .contacts__tel > p {
+    margin-right: 0px;
+  }
 }

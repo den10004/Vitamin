@@ -31,3 +31,41 @@ h1 {
   font-family: "Myriad Pro";
   color: rgb(0, 0, 0);
 }
+
+.background__section {
+  position: relative;
+  height: 260px;
+}
+
+@media screen and (max-width: 1024px) {
+  .background__section {
+    height: 100px;
+  }
+}
+
+.background__section > img {
+  position: absolute;
+}
+
+.ingredients__apple {
+  bottom: 35px;
+  right: 0px;
+}
+
+@media screen and (max-width: 425px) {
+  .ingredients__apple {
+    width: 60px;
+  }
+}
+
+.ingredients__leafs {
+  bottom: 0px;
+  left: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .ingredients__leafs {
+    width: 160px;
+    left: 100px;
+  }
+}
