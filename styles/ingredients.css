@@ -1,4 +1,5 @@
 .ingredients {
+  display: flex;
   max-width: 1920px;
   background-image: url(../images/background2.png);
   background-repeat: no-repeat;
@@ -7,18 +8,49 @@
   overflow: hidden;
   position: relative;
   margin-top: 150px;
+  margin-bottom: 20px;
+  z-index: 0;
+}
+@media screen and (max-width: 1024px) {
+  .ingredients {
+    margin-top: 75px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .ingredients {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ingredients {
+    margin-top: 30px;
+  }
+}
+
+.ingredients > img {
+  position: absolute;
+  z-index: 1;
 }
 
 .ingredients__block {
   width: 1246px;
   margin-left: auto;
-  margin: 125px 200px 0 auto;
+  margin: 125px 200px 300px auto;
+  z-index: 2;
 }
 
 @media screen and (max-width: 1500px) {
   .ingredients__block {
     width: 95%;
-    margin: 125px auto 0 auto;
+    margin: 125px auto 50px auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ingredients__block {
+    margin: 90px auto 50px auto;
   }
 }
 
@@ -142,5 +174,89 @@
   }
   .block__card > h4 {
     font-size: 14px;
+  }
+}
+
+.ingredients__consultation {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 50px;
+  max-width: 640px;
+}
+
+@media screen and (max-width: 1024px) {
+  .ingredients__consultation {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .ingredients__consultation {
+    margin-right: 0;
+  }
+}
+
+.ingredients__consultation > p {
+  font-size: 18px;
+  font-family: "Commissioner";
+  color: rgb(0, 0, 0);
+  line-height: 1.389;
+  margin-right: 73px;
+}
+
+@media screen and (max-width: 425px) {
+  .ingredients__consultation > p {
+    font-size: 16px;
+    line-height: 1;
+    margin-right: 25px;
+  }
+}
+
+.consultation__telegram {
+  width: 62px;
+  height: 62px;
+  cursor: pointer;
+}
+
+.consultation__arrow {
+  position: absolute;
+  left: 180px;
+  bottom: -35px;
+  transform: rotate(9deg);
+}
+
+.ingredients__leaf {
+  top: 220px;
+  right: 0;
+}
+
+.ingredients__oil {
+  top: 110px;
+  left: 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .ingredients__oil {
+    top: 200px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ingredients__leaf {
+    width: 70px;
+  }
+  .ingredients__oil {
+    top: 230px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ingredients__leaf {
+    top: 150px;
+  }
+  .ingredients__oil {
+    top: 320px;
   }
 }
